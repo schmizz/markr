@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<html xmlns:sw="http://www.soulworks.com/swml/1.0">
+<head>
+	<meta charset="utf-8" />
+	<title>SWML</title>
+	<style>
+		body { font-family: Arial,Verdana,sans-serif; color: #333; }
+		.container { width: 780px; margin: 0 auto; border:1px solid #CCC; padding: 20px; }
+		h1, h2, h3 { color: #999; }
+	</style>
+</head>
+<body>
+	<sw:body>
+		<sw:headline>Soulworks Markr</sw:headline>
+		<sw:html>
+			<sw:server />
+			<sw:code>$ hello world</sw:code>
+			<h1>Hello world</h1>
+			<h2>Another headline</h2>
+		</sw:html>
+	</sw:body>
+</body>
+</html>

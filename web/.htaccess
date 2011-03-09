@@ -1,0 +1,19 @@
+
+<IfModule mod_php5.c>
+	php_value include_path ".:../src"
+</IfModule>
+
+<IfModule !mod_php5.c>
+	<FilesMatch "\.php$">
+		Order allow,deny
+		Deny from all
+		Allow from none
+	</FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /~csc/markr/
+	RewriteCond %{REQUEST_FILENAME} !\.(jpg|jpeg|gif|png|css|js|pl|txt)$
+	RewriteRule ^(.*)$ index.php?q=$1 [QSA]
+</IfModule>
